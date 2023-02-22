@@ -13,3 +13,7 @@
 .about__paragraph{
     width: 60vw;
 }
+.about__firma{
+    display: block;
+    margin: auto;
+}

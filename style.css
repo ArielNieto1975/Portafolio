@@ -54,26 +54,26 @@ a{
     margin-right: 30px;
 }
 .menu__list__item{
-    margin-right: 15px;
+    margin-right: 20px;
+    transition: .3s all;
 }
+
+.menu__list__item:hover{
+    transform: scale(1.2);
+    
+}
+.menu__list__item:hover a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #220285;
+}
+
+
 .menu__list__item__contato{
     font-weight: bold;
 }
 
 
-
-/* experiencia*/
-
-section.experience{
-
-}
-
-
-/*footeer*/
-
-section.footer{
-   
-}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
