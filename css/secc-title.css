@@ -1,0 +1,21 @@
+.title {
+    margin-top: 50px;
+}
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+}
+.title__bio{
+    font-size: 3rem;
+}
+.title__network{
+    display: flex;
+    padding: 0;
+}
+.title__network__item{
+    margin-right: 30px;
+}
+

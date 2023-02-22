@@ -1,0 +1,15 @@
+.about{
+    background: var(--fondo2);
+}
+.about__container{
+    width: 90vw;
+    margin: 30px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about__title{
+    font-size: 1.5rem;
+}
+.about__paragraph{
+    width: 60vw;
+}
