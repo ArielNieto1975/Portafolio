@@ -257,9 +257,21 @@
                     <h3 class="formcontacto__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontacto__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                     <form class="formcontacto__form" name="form">
-                        <input class="formcontacto__input" type="text" name="nombre" placeholder="Nombre" required>
-                        <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" required>
-                        <input class="formcontacto__input" type="text" name="asunto" placeholder="Assunto">
+                        <div class="input__container">
+                            <input class="formcontacto__input" id="formName" type="text" name="nombre" placeholder="Nombre" required 
+                            pattern="^([a-z A-Z]{1,255})$" data-tipo="nombre">
+                            <span class="input__message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input__container">
+                            <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" required data-tipo="email">
+                            <span class="input__message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input__container">
+                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S]{4,90}" maxlength="90">
+                            <span class="input__message-error">Este campo no es valido</span>
+                        </div>
+                        
+                        
                         <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
                         <!-- <button type="submit" class="formcontacto__boton">Enviar mensaje</button> -->
                         <div class="container">
@@ -290,6 +302,6 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="./js/add.js" type="module"></script>
 </body>
 </html>

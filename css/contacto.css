@@ -22,8 +22,13 @@
     height: 64%;
 }
 .formcontacto__input{
+    box-sizing: border-box;
     height: 40px;
     font-size: .8rem;
+    width: 100%;
+    border-radius: 7px;
+    border-style: none;
+    padding: 0 10px;
 }
 .formcontacto__boton{
     display: inline-block;
@@ -34,7 +39,27 @@
 .formcontacto__input:focus {
   font-size: 1.1rem;
   transition: all 0.25s;
+  outline: none;
 }
+
+
+
+.input__message-error {
+  display: none;
+}
+
+
+.input__container--invalid .input__message-error {
+  font-size: 0.8rem;
+  color: red;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  
+}
+
+
+
 
 
 
