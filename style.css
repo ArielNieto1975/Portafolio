@@ -72,6 +72,9 @@ a{
 .menu__list__item__contato{
     font-weight: bold;
 }
+.menu__list__item__contato a:hover{
+    color: darkorange
+}
 
 
 

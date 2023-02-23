@@ -13,8 +13,8 @@
     flex-direction: row;
 }
 .skills__box, .hobbies__box{
-    width: 14vw;
-    height: 14vw;
+    width: 12vw;
+    height: 12vw;
     background-color: #ffffff;
     margin-right: 10px;
     position: relative;

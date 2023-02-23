@@ -1,6 +1,6 @@
 .formcontacto {
     background: var(--fondo2);
-    margin: 50px auto;
+    margin: 50px auto 0;
 }
 .formcontacto__contacto {
     display: flex;
@@ -42,12 +42,9 @@
   outline: none;
 }
 
-
-
 .input__message-error {
   display: none;
 }
-
 
 .input__container--invalid .input__message-error {
   font-size: 0.8rem;
@@ -59,11 +56,7 @@
 }
 
 
-
-
-
-
-
+/* boton enviar */
 .center {
     width: 180px;
     height: 60px;
@@ -73,7 +66,7 @@
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: #79a1c9;
+    background: #6297cc;
     border: 1px solid #91C9FF;
     outline: none;
     transition: 1s ease-in-out;
@@ -92,7 +85,7 @@
   
   .btn:hover {
     transition: 1s ease-in-out;
-    background: #4F95DA;
+    background: #2784e0;
   }
   
   .btn:hover svg {

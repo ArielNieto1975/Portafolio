@@ -17,5 +17,18 @@
 }
 .title__network__item{
     margin-right: 30px;
+    padding: 5px;
+    transition: .1s all;
+}
+
+.title__network__item:hover{
+    outline: 1px solid purple;
+    border-radius: 5px;
+    background-color: var(--fondo2);
+    box-shadow: 0 0 5px ;
+}
+
+.title__subsection{
+    line-height: 1.3;
 }
 
