@@ -26,7 +26,11 @@ const mensajesDeError = {
     },
     asunto: {
         valueMissing: "El campo Asunto no puede estar vacio",
-        patternMismatch: "El nombre no es válido"
+        patternMismatch: "El Asunto no puede tener mas de 50 caracteres."
+    },
+    mje: {
+        valueMissing: "El campo cuerpo del mensaje no puede estar vacio",
+        patternMismatch: "El Mensaje no puede tener mas de 300 caracteres."
     },
     email: {
         valueMissing: "El campo Correo no puede estar vacio",

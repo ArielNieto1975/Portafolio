@@ -17,3 +17,17 @@
     display: block;
     margin: auto;
 }
+
+@media (max-width: 900px) {
+    .about__paragraph{
+        width: 90vw;
+    }    
+}
+@media (max-width: 768px) {
+    .about__paragraph{
+        font-size: .8rem;
+    } 
+    .about__container{
+        padding-top: 30px;
+    }   
+}

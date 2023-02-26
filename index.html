@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="./css/formacion.css">
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="./css/pie.css">
+    <link rel="stylesheet" href="./css/experiencia.css">
 </head>
 <body>
     <!-- Sección del Menú  -->
-    <div class="tudo">
+    <div class="todo">
         <section class="menu">
             <header class="menu__header">
                 <img src="assets\vector.png">
@@ -203,7 +204,7 @@
         <!-- Sección de Experiencia Profesional/Proyectos-->
         <section class="experience" id="xp">
             <h2 class="experience__section__title" >Experiencia Profesional</h2>
-            <div class="experiencie__box">
+            <div class="experience__box">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
                 <img class="experience__img" src="assets\decod_print.png">
                 <div class="experience__info">
@@ -217,43 +218,43 @@
                 </div>
             </div>  
         </section>
-        <div class="experiencie__box">
+        <div class="experience__box form_valida">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\forca_print.png">
+            <img class="experience__img"  src="./assets/proy_validacion_formulario.png">
             <div class="experience__info">
-                <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
+                <h2 class="experience__title">Formulario creado con HTML y JavaScript</h2>
+                <h3 class="experience__text">Proyecto curso ALURA </h3>
                 <div class="experience__description">
                     <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <span class="experience__repo"><a href="https://github.com/ArielNieto1975/Validacion_Formulario-curso_JavaScript-Alura"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                    <span class="experience__demo"><a href="https://arielnieto1975.github.io/Validacion_Formulario-curso_JavaScript-Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
                 </div>
             </div>
         </div>  
 
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets\secretcode_print.png">
-            <div class="experience__info-container">
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
+            <img class="experience__img" src="./assets/Barberia_Alura.png">
+            <div class="experience__info">
+                <h2 class="experience__title">Barberia Alura - Page</h2>
+                <h3 class="experience__text">Proyecto curso ALURA </h3>
                 <div class="experience__description">
                     <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <span class="experience__repo"><a href="https://github.com/ArielNieto1975/barberiaAlura"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                    <span class="experience__demo"><a href="https://arielnieto1975.github.io/barberiaAlura/"><button class="experience__botao--demo">Ver demo</button></a></span>
                 </div>
             </div>
         </div>  
 
-        <div class="experience__box">
-            <img class="experience__img" src="assets\forca2_print.png">
-            <div class="experience__info-container">
-                <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
+        <div class="experience__box form_valida">
+            <img class="experience__img" src="./assets/peluqueria_canina.png">
+            <div class="experience__info">
+                <h2 class="experience__title">Proyecto Peluquería Canina - creado con HTML, CSS</h2>
+                <h3 class="experience__text">En desarrollo </h3>
                 <div class="experience__description">
                     <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                    <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                    <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                    <span class="experience__repo"><a href="https://github.com/ArielNieto1975/Peluqueria-Canina"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                    <span class="experience__demo"><a href="https://peluqueria-canina.vercel.app"><button class="experience__botao--demo">Ver demo</button></a></span>
                 </div>
             </div>
         </div>  
@@ -271,7 +272,7 @@
                     <form class="formcontacto__form" name="form">
                         <div class="input__container">
                             <input class="formcontacto__input" id="formName" type="text" name="nombre" placeholder="Nombre" required 
-                            pattern="^([a-z A-Z]{1,255})$" data-tipo="nombre">
+                            pattern="^([a-z A-Z]{1,50})$" data-tipo="nombre" maxlength="50">
                             <span class="input__message-error">Este campo no es valido</span>
                         </div>
                         <div class="input__container">
@@ -279,12 +280,14 @@
                             <span class="input__message-error">Este campo no es valido</span>
                         </div>
                         <div class="input__container">
-                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S]{4,90}" maxlength="90">
+                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S]{4,50}" >
                             <span class="input__message-error">Este campo no es valido</span>
-                        </div>
+                        </div>                       
                         
+                        <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required pattern="[\s\S]{4,10}" title="El mensaje no puede tener mas de 300 caracteres"></textarea>
                         
-                        <textarea class="formcontacto__textarea" rows="10" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+
+
                         <!-- <button type="submit" class="formcontacto__boton">Enviar mensaje</button> -->
                         <div class="container">
                             <div class="center">

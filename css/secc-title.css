@@ -31,4 +31,55 @@
 .title__subsection{
     line-height: 1.3;
 }
+.title__profile{
+    width: 30%;
+}
+
+
+
+@media (max-width: 1100px) {
+    .title__bio{
+        font-size: 1.5rem;
+    }
+    .title__subsection{
+        font-size: .8rem;
+    }
+    
+}
+@media (max-width: 768px) {
+
+    .title__profile{
+        width: 25%;
+        padding-left: 30px;
+    }
+    .title__bio{
+        font-size: 1.3rem;
+    }
+  
+}
+@media (max-width: 650px) {
+    .title {
+        margin-top: 30px;
+    }
+    .title__container{
+        width: 100%;
+    }
+    .title__div{
+        flex-direction: column;
+        align-items: start;
+    }
+    .title__profile{
+        width: 30%;
+    }
+    .title__network{
+        font-size: .6rem;
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .title__network__item{
+        margin-right: 5px;
+    }
+  
+}
 
