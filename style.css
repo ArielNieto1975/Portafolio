@@ -76,22 +76,21 @@ a{
     color: darkorange
 }
 
+@media (max-width: 850px){
+    .menu__list {
+        display: none;
+    }
+    .menu nav {
+        justify-content: end;
+        width: 50vw;
+    }
+}
 
 
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
 
-
-/*Tablet*/
 @media (max-width: 768px) {
 
-.menu__list {
-    display: none;
-}
-.menu nav {
-    justify-content: end;
-    width: 50vw;
-}
+
 .menu__header{
     
     width: 40vw;
