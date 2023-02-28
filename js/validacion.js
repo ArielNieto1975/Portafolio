@@ -7,6 +7,7 @@ export function valida(input) {
     if (input.validity.valid){
         input.parentElement.classList.remove("input__container--invalid");
         input.parentElement.querySelector(".input__message-error").innerHTML = "";
+        
     }else {
         input.parentElement.classList.add("input__container--invalid");
         input.parentElement.querySelector(".input__message-error").innerHTML = mostrarMensajeDeError(tipoDeInput, input);
@@ -40,7 +41,8 @@ const mensajesDeError = {
 }
 
 const validadores = {
-    nacimiento: input => validarNombre(input)
+    nombre: input => validarNombre(input)
+    
 }
 
 function mostrarMensajeDeError (tipoDeInput, input){
@@ -61,3 +63,4 @@ function validarNombre(input) {
         };
    
 }
+

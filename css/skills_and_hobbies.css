@@ -8,6 +8,9 @@
 .skills__title, .hobbies__title{
     font-size: 1.5rem;
 }
+.skills__name{
+    font-size: .8rem;
+}
 .skills__line, .hobbies__line {
     display: flex;
     flex-direction: row;
@@ -27,7 +30,9 @@
     padding-left: 20px;
 }
 
-@media (max-width: 900px) {
+
+
+@media (max-width: 1000px) {
     .skills__line, .hobbies__line{
         flex-wrap: wrap;
         justify-content: center;
@@ -36,6 +41,9 @@
         min-width: 150px;
         min-height: 150px;
         margin-bottom: 10px;
+    }
+    .skills__name{
+        font-size: 1rem;
     }
 }
 

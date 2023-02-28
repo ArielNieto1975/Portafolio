@@ -70,7 +70,7 @@
     width: 180px;
     height: 60px;
     cursor: pointer;
-    background: #6297cc;
+    background: lightgrey;
     border: 1px solid #91C9FF;
     outline: none;
     transition: 1s ease-in-out;
@@ -101,7 +101,9 @@
     font-size: 18px;
     font-weight: 100;
   }
-  
+   .gris {
+    background: #6297cc;
+   }
 
 
   @media (max-width: 1150px) {

@@ -41,6 +41,11 @@
     border: 1px solid #297ccf;
     outline: none;
     font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.experiencia__botao--repo:hover{
+    color: buttonface;
+    background: #297ccf;
 }
 .experience__botao--demo{
     width: 150px;
@@ -51,6 +56,12 @@
     outline: none;
     color: var(--cor-de-fundo);
     font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.experience__botao--demo:hover{
+    color: #297ccf;
+    background: buttonface;
+    border: 1px solid #297ccf;
 }
 
 @media (max-width: 900px) {
@@ -75,7 +86,16 @@
     .experience__img, .experience__info{
         width: 80%;
     }
+}
 
+@media (max-width: 425px) {
+    .experiencia__botao--repo, .experience__botao--demo{
+        width: 120px;
+        height: 40px;
+    }
+    .experience__img, .experience__info{
+        width: 90%;
+    }
 
 }
 
