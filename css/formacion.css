@@ -15,12 +15,14 @@
     width: 90vw;
     justify-content: space-evenly;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 .academic__courses__box {
     width: 25vw;
     height: 25vw;
+    min-width: 150px;
     /* background-color: #ffffff; */
-    margin-bottom: 50px;
+    /* margin-bottom: 20px; */
 }
 .academic__courses__list {
     padding-left: 0;
@@ -75,5 +77,8 @@
     }
     .academic__courses__item__img{
         height:  40vw;
+    }
+    .cp{
+        order: -1;
     }
 }
