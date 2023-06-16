@@ -11,6 +11,13 @@
 .skills__name{
     font-size: .8rem;
 }
+.skills__line{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 .skills__line, .hobbies__line {
     display: flex;
     flex-direction: row;
